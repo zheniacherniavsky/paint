@@ -29,9 +29,11 @@ $(document).ready(function() {
 
 	$("table").mousedown(function(){ 
 	    paint = true;
+	    $("#configIcon").fadeOut("fast");
 	});
 	$("table").mouseup(function(){ 
 	    paint = false;
+	    $("#configIcon").fadeIn("fast");
 	});
 
 	$("td").hover(function() {
