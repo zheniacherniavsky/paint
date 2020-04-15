@@ -27,7 +27,8 @@ $(document).ready(function() {
  		});
 	})
 
-	$("td").mousedown(function() {
+	$("#paint td").mousedown(function() {
+		$(this).removeClass();
 		$(this).addClass(color);
 	});
 	$("#paint").mousedown(function(){ 

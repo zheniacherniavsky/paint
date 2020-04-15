@@ -83,7 +83,7 @@ $(document).ready(function() {
 		if(grid) {
 			grid = false
 			document.getElementById('grid').innerHTML = "Сетка ❌";
-			$("#paint td").css('border', 'none');
+			$("#paint td").css('border', '1px solid rgb(0,0,0,0)');
 		}
 		else {
 			grid = true;
