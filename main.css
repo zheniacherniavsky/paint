@@ -1,13 +1,22 @@
 body {
 	margin: 0;
 	padding: 0;
+	background: rgb(250, 255, 255);
 }
 
-.cursorActive {
-	cursor: crosshair;
+a {
+	text-decoration: none;
+	color: black;
 }
+
+a:hover {
+	color: grey;
+}
+
+/* ---- PAINT ----- */
 
 table {
+	display: none;
 	z-index: -1;
     border-collapse: collapse;
     border: hidden;
@@ -15,6 +24,7 @@ table {
 }
 
 td {
+	border: 1px solid rgb(0,0,0,0.1);
 	padding: 15px;
 }
 
@@ -26,4 +36,43 @@ td {
 .hoverTD {
 	background-color: black;
 	opacity: 0.3;
+}
+
+.cursorActive {
+	cursor: crosshair;
+}
+
+/* ---- INFO ----- */
+
+#hello {
+	display: auto;
+	position: fixed;
+	left: 30%;
+	top: 15%;
+	width: 30vw;
+	border: 3px solid black;
+	border-radius: 3vw;
+	background-color: rgb(255,255,255,0.5);
+	box-shadow: 0px 0px 20px lightgrey;
+	font-family: Consolas;
+	font-weight: bold;
+	font-size: 1.5vw;
+	padding: 2%;
+	text-align: center;
+}
+
+#accept {
+	border: 5px solid rgb(0,0,255,0.2);
+	border-radius: 3vw;
+}
+#accept:hover {
+	cursor: pointer;
+	border: 5px solid rgb(0,0,255,0.4);
+	background-color: rgb(0,0,255,0.2);
+	border-radius: 3vw;
+	box-shadow: 0px 0px 20px lightgrey;
+}
+
+.displayNONE {
+	display: none;
 }

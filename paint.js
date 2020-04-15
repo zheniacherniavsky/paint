@@ -1,6 +1,6 @@
 function drawTable() {
 	let pixelSize = 32; // px
-	document.write("<table border='1'>");
+	document.write("<table>");
 	let tableHeight = 0;
 	while(tableHeight <= window.innerHeight-5) {
 		document.write("<tr>");
@@ -19,17 +19,20 @@ drawTable();
 let paint = false;
 
 $(document).ready(function() {
-
-	$("table").click(function() {
-		if(paint) {
-			paint = false;
-			$("body").removeClass('cursorActive');
-		}
-		else {
-			paint = true;
-			$("body").addClass('cursorActive');
-		}
+	$("#accept").click(function() {
+		$("#hello").fadeOut( "fast", function() {
+			$("table").fadeIn("slow", function() {
+				$("body").addClass('cursorActive');
+			});
+ 		});
 	})
+
+	$("table").mousedown(function(){ 
+	    paint = true;
+	});
+	$("table").mouseup(function(){ 
+	    paint = false;
+	});
 
 	$("td").hover(function() {
 		if(paint) {
@@ -38,5 +41,5 @@ $(document).ready(function() {
 		}
 	}, function() {
 		$(this).removeClass('hoverTD')
-	})
+	});
 })
