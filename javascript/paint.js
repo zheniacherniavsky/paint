@@ -19,8 +19,9 @@ drawTable();
 let paint = false;
 
 $(document).ready(function() {
+	
 	$("#accept").click(function() {
-		$("#hello").fadeOut( "fast", function() {
+		$("#hello").fadeOut( "slow", function() {
 			$("table").fadeIn("slow", function() {
 				$("body").addClass('cursorActive');
 			});

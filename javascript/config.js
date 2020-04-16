@@ -96,5 +96,7 @@ $(document).ready(function() {
 		}
 	})
 
-
+	$("#clean").click(function() {
+		$("#paint td").removeClass();
+	})
 })

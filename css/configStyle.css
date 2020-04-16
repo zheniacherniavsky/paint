@@ -16,7 +16,7 @@
 	right: 0%;
 	top: 1%;
 	width: 15vw;
-	border: 3px solid rgb(0,0,0,0.5);
+	border: 3px solid rgb(83, 234, 147, 0.3);
 	border-right: none;
 	border-top-left-radius: 3vw;
 	border-bottom-left-radius: 3vw;
@@ -132,3 +132,11 @@
 	color: grey;
 	cursor: pointer;
 }
+
+/* CLEAN */
+
+#clean:hover {
+	color: grey;
+	cursor: pointer;
+}
+
